@@ -1,0 +1,84 @@
+.body {
+    width: 90%;
+    margin: 0px auto;
+    z-index: 0;
+}
+
+.regions {
+    background-color: yellow;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.regions li {
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2px 5px;
+}
+
+.regions li a {
+    color: white;
+    text-decoration: none;
+}
+
+.pokes {
+    position: relative;
+    left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    margin: 5px 5px;
+    background-color: #111218;
+    flex-basis: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.item .header {
+    color: whitesmoke;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item .header .name {
+    width: 50%;
+    margin: 0px 10px;
+    text-transform: capitalize;
+}
+.item .header .color {
+    width: 10px;
+    height: calc(100% - 20px);
+    position: relative;
+    border-radius: 10px;
+    left: -5px;
+}
+
+.item .body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .footer {
+    display: flex;
+    color: whitesmoke;
+}
+
+.item .footer .types {
+    width: 50%;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}

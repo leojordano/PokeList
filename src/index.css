@@ -1,13 +1,118 @@
-body {
+body, html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  background-color: #343a40;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.icon {
+  font-size: 30px;
+  color: white;
+}
+.none {
+  display: none !important;
+}
+
+/* SIDE MENU */
+.sideMenu {
+  background-color: rgb(22, 26, 48);
+  width: 0px;
+  height: 100vh;
+  left: 50px;
+  top: 0px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: open 0.5s forwards;
+  z-index: 1000;
+}
+@keyframes open {
+  to{
+    width: 200px;
+  }
+}
+
+.sideMenu ul {
+  height: 50%;
+  width: 70%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+}
+.sideMenu ul li .link {
+  color: white;
+  text-decoration: none;
+  margin: 0px 10px;
+  animation: vim 0.5s forwards;
+  position: relative;
+  left: -50px;
+}
+
+@keyframes vim {
+  to {
+    left: 0px;
+  }
+}
+
+.sideMenu ul li:hover {
+  left: 0px;
+}
+
+.sideMenu ul li {
+  position: relative;
+  left: -30px;
+  width: 100%;
+  background-color: #6c757d;
+  margin: 5px 0px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  transition-duration: 0.1s;
+}
+
+.side-bar {
+  top: 0px;
+  height: 100vh;
+  width: 50px;
+  background-color: #111218;
+  border-right: 1px solid whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+}
+
+.side-bar .icon:hover {
+  position: relative;
+  animation: icon 0.7s ease infinite;
+}
+.side-bar .icon {
+  transition-duration: 0.2s;
+}
+
+@keyframes icon {
+  0% {
+    left: 0px;
+  } 50% {
+    left: 5px;
+  } 100% {
+    left: 0px;
+  }
+}
+
+.rotate {
+  transform: rotate(-180deg);
 }
