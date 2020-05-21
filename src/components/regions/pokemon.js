@@ -33,11 +33,6 @@ function Pokemon() {
         }
     }, [url2])
 
-    // useEffect(() => {
-    //     if(url3 !== null) {
-    //         console.log(url3[0])
-    //     }
-    // },[url3])
   return (
       <div className='pokes'>
           {name == 'alola' && <h2>{undefined}</h2>}

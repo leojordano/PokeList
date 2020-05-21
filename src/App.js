@@ -40,18 +40,11 @@ function App() {
                 <Link className='link' to="/regions">Regions</Link>
               </li>
 
-              <li>
-                <Link className='link' to="/regions">Regions</Link>
-              </li>
-
-              <li>
-                <Link className='link' to="/regions">Regions</Link>
-              </li>
             </ul>
         </nav>
 
       <Switch>
-        <Route path='/regions'>
+        <Route exact path='/regions'>
           <Regions />
         </Route>
       </Switch>
