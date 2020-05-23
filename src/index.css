@@ -158,8 +158,8 @@ code {
 
 .open-drop {
   visibility: visible;
-  animation: open-drop 0.5s forwards linear;
   margin-bottom: 5px;
+  height: 318px;
 }
 
 @keyframes open-drop {
@@ -173,22 +173,10 @@ code {
   padding: 0px;
   margin: 10px 10px;
   position: relative;
-  top: 150px;
-  opacity: 0%;
+  top: 0px;
 }
 .drop-item-open {
-  top: 0px;
   visibility: visible;
-  animation: drop-item 0.2s forwards linear;
-  animation-delay: 0.8s;
-}
-
-@keyframes drop-item {
-    0% {
-      opacity: 0%;
-    } 100% {
-      opacity: 100%;
-    }
 }
 
 .link-drop {

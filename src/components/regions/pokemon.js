@@ -44,7 +44,7 @@ function Pokemon() {
     // 
         setInterval(() => {
             setProgress(false) 
-        }, 5000)
+        }, 1000)
        
     
 
