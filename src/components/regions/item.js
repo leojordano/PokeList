@@ -37,7 +37,7 @@ function Item({...props}) {
         </div>
 
         <div className="body">
-            {pokemon ? <img src={pokemon.sprites.front_default} /> : null}
+            {pokemon ? <div className='img' style={{backgroundImage: `url(${pokemon.sprites.front_default})`}}></div> : null}
         </div>
 
         <div className="footer">

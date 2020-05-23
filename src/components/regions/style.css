@@ -1,5 +1,5 @@
 .body {
-    width: 90%;
+    width: 50%;
     margin: 0px auto;
     z-index: 0;
 }
@@ -27,6 +27,8 @@
 .pokes {
     position: relative;
     left: 40px;
+    width: 90%;
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -81,4 +83,36 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+.img {
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.progress {
+    margin: 50px;
+    width: 80%;
+    height: auto;
+    font-size: 20px;
+}
+
+.progress span {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 270px) {
+    .progress {
+        display: none;
+    }
+}
+.cont-pokes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
