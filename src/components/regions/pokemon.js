@@ -11,6 +11,8 @@ function Pokemon() {
     let {name} = useParams()
     let url = `https://pokeapi.co/api/v2/region/${name}/`
 
+    const [hidden, setHidden] = useState(false)
+
     const [pokedex, setPokedex] = useState(null)
     const [url2, setUrl2] = useState(null)
     const [url3, setUrl3] = useState([])

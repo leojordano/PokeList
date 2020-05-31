@@ -5,6 +5,7 @@ import {IoIosArrowDown} from 'react-icons/io'
 
 import Regions from './components/regions/regions'
 import Pokemon from './components/regions/pokemon'
+import Unic from './components/regions/unic'
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -90,7 +91,10 @@ function App() {
         <Route path='/regions/:name'>
             <Pokemon />
         </Route>
-        
+
+        <Route path='/poke/:poke'>
+                <Unic />
+            </Route>
       </Switch>
       </div>
     </Router> 
