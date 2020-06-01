@@ -120,7 +120,111 @@
 /* UNIC */
 .unic {
     width: 80%;
-    height: 500px;
+    margin: 10px auto;
+    background-color: #111218;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+.unic h3 {
+    text-transform: capitalize;
+}
+
+.unic .header-unic {
     margin: 0px auto;
-    background-color: red;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+}
+
+.unic .sprites {
+    display: flex;
+    width: 200px;
+    margin-left: 20px;
+    /* border-radius: 5px; */
+    border-right: 1px solid white;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.unic .sprites .cont-sprites {
+    display: flex;
+}
+
+.unic-body {
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 95%;
+    padding-bottom: 10px;
+    margin: 0px auto;
+}
+
+.unic-types {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+    margin-top: 10px;
+}
+
+.unic-type {
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 45px;
+    padding: 10px;
+    background-color: rgb(63, 63, 63);
+    text-transform: capitalize;
+    transition-duration: 0.2s;
+}
+
+.unic-type:hover {
+    background-color: rgb(97, 96, 96);
+}
+
+.unic-types .cont-unic-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.unic-types .cont-infos {
+    text-align: center;
+}
+
+.unic .stats {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    padding-right: 20px;
+    border-right: 1px solid white;
+}
+
+.unic .cont-abilities {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.unic .cont-abilities .ability {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(63, 63, 63);
+    transition-duration: 0.2s;
+}
+
+.unic .cont-abilities .ability:hover {
+    background-color: rgb(97, 96, 96);
+}
+
+.cont-back {
+    width: 80%;
+    height: 50px;
+    background-color: yellow;
+    margin: 0px auto;
 }
