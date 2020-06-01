@@ -48,6 +48,7 @@ function Pokemon() {
             setProgress(false) 
         }, 1000)
        
+        document.title = `PokeList | ${name}`
     
 
   return (

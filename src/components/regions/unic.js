@@ -66,6 +66,10 @@ import Back from './back'
     return 'Não identificado'
   }
 
+  if(render) {
+    document.title = `PokeList | ${item.name}`  
+  }
+
   return (
     <>
     <Back />
@@ -97,9 +101,9 @@ import Back from './back'
           <div className="cont-infos">
             <div>Height: {render && <span>{getHeight(item.height)}</span>}</div>
             <div>Weight: {render && <span>{getWeight(item.weight)}</span>}</div>
-            <div>Base Experience: {render && <span>{item.base_experience}</span>}</div>
-            <div>Capture Rate: {render && <span>{specie.capture_rate}%</span>}</div>
-            <div>Base Happiness: {render && <span>{specie.base_happiness}</span>}</div>
+            <div>Base Exp: {render && <span>{item.base_experience}</span>}</div>
+            <div>Cap Rate: {render && <span>{specie.capture_rate}%</span>}</div>
+            <div>Base Happi: {render && <span>{specie.base_happiness}</span>}</div>
             <div>Gender: <IoMdMale /> or <IoMdFemale /></div>
           </div>
         </div>
