@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
-import usePersistedState from './ultils/usePersistedState'
+import usePersistedState from './utils/usePersistedState'
 import firebase from 'firebase/app'
 import "firebase/auth";
 import { FirebaseAuthProvider, FirebaseAuthConsumer,  } from '@react-firebase/auth'
